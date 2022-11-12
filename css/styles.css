@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Source+Sans+Pro&display=swap');
+
+nav { /*Menú de barra*/
+    font-family: Source Sans Pro;
+}
+h1 { /*Delicat*/
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 96px;
+    margin-top: 80px;
+    padding-left: 70px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s 2s;
+}
+h1:hover{
+    color:rgb(206, 165, 110);
+}
+/* Animación */
+h3 {
+    font-family: DM Sans;
+    font-weight: 200;
+    font-size: 24px;
+    color:rgb(206, 165, 110);
+    margin-bottom: 30px;
+}
+.animación {
+    display:flex;
+    animation: scrolling 15s linear infinite;
+    animation-fill-mode: both;
+}
+.texto {
+    flex-shrink:0;
+}
+@keyframes scrolling {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+}
+.col-12 { /*Img-Portada*/
+    height: 80vh;
+    margin-bottom: 30px;
+}
+.col-12 img, #lightbox img {
+    filter: grayscale(0%);
+}
+h2 {
+    font-family: DM Sans;
+    font-size: 48px;
+    margin-bottom: auto;
+    margin-top: 75px;
+}
+p { /*Texto*/
+    font-family: Source Sans Pro;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.row div { 
+    margin-bottom: 45px; 
+}
+img { /*Imagenes*/
+    object-fit: fill;
+    filter: grayscale(100%);
+}
+img:hover {
+    filter: grayscale(0%);
+}
+.Contact {
+    font-family: Source Sans Pro;
+}
+form {
+    font-family: Source Sans Pro;
+    width: 100%;
+    font-size: 20px;
+}
+input,textarea {
+    margin-bottom: 25px;
+    font-size: 16px;
+    width: 350px;
+    height: 25px;
+    display: block;
+}
+input[type="number"]{width: 100px;}
+input[type="checkbox"], input[type="radio"]{display: inline-block;} 
+textarea { /*Comentarios*/
+    resize: none;
+    height: 150px;
+}
+button {
+    font-size: 20px;
+    color:white;
+    background-color:black;
+    margin-bottom: 60px;
+    border-style:outset;
+    border-radius: 5px;
+    border-color: black;
+}
+@media(min-width:992px)
+{
+    .col-lg-4 {
+        width: 32%;
+    }
+}
+@media(max-width:992px)
+{
+    h1{
+        margin-top: 100px;
+        text-align: center;
+        padding-left: 0%;
+    }
+    h2 {
+        font-family: DM Sans;
+        font-size: 48px;
+        margin-top: 40px;
+    }
+    .col-12 { /*Img-Portada*/
+        height: auto;
+        margin-bottom: 0px;
+    }
+    button{
+        width: 26%;
+        margin-bottom: 20px;
+    }
+}
